@@ -113,7 +113,7 @@ body{
 #face{
 	display: block;
 	    -webkit-transition: opacity 1s ease-out;
-	    opacity: 0%; 
+	    opacity: 0; 
 	    height: 0px;
 	    overflow: hidden;
 	height:140px;
