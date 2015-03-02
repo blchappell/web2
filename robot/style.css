@@ -1,80 +1,4 @@
 
-/* Meyer Reset */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-/* Center Content */
-
-.centered { 
-  margin:0 auto;
-  width:960px;
-}
-
-
-/* Clearfix */
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
- 
-.clearfix { display: inline-block; }
-html[xmlns] .clearfix { display: block; }
-* html .clearfix { height: 1%; }
-
-/*End Reset */
-
-
 /* 	==================
 	All webkit keyframes here
 	------------------ */
@@ -138,7 +62,7 @@ body{
 	width:300px;
 	background-color:white;
 	position:absolute;
-	top:400;
+	top:400px;
 	left:25%;
 }
 #compstand-shadow{
@@ -146,7 +70,7 @@ body{
 	width:300px;
 	background-color:#CCCCCB;
 	position:absolute;
-	top:480;
+	top:480px;
 	left:25%;
 }
 
@@ -159,7 +83,7 @@ body{
 	width:100px;
 	background-color:#CCCCCB;
 	position:absolute;
-	top:445;
+	top:445px;
 	left:42%;
 }
 #computer{
@@ -167,7 +91,7 @@ body{
 	width:250px;
 	background-color:#51504F;
 	position:absolute;
-	top:280;
+	top:280px;
 	left:29%;
 }
 #computer-screen{
@@ -189,8 +113,8 @@ body{
 #face{
 	display: block;
 	    -webkit-transition: opacity 1s ease-out;
-	    opacity: 0; 
-	    height: 0;
+	    opacity: 0%; 
+	    height: 0px;
 	    overflow: hidden;
 	height:140px;
 	width:95px;
@@ -219,7 +143,7 @@ body{
 	width:80px;
 	background-color:white;
 	position:absolute;
-	top:90;
+	top:90px;
 	left:8px;
 	}
 	
@@ -231,8 +155,8 @@ body{
 	width:300px;
 	height:300px;
 	position:absolute;
-	top:0;
-	right:0;
+	top:0px;
+	right:0px;
 }
 .bolt{
 	width:30px;
@@ -247,28 +171,28 @@ body{
 	height:20px;
 	border-radius:50%;
 	position:absolute;
-	top:5;
-	right:5;
+	top:5px;
+	right:5px;
 	background-color:#CCCCCB;
-	z-index:10;
+	z-index:10px;
 }
 .bolt-inner2{
 	width:20px;
 	height:20px;
 	border-radius:50%;
 	position:absolute;
-	top:5;
-	right:5;
+	top:5px;
+	right:5px;
 	background-color:#989898;
 	z-index:10;
 }
 #bolt1{
-	bottom:5;
-	left:5;
+	bottom:5px;
+	left:5px;
 }
 #bolt2{
-	top:5;
-	left:5;
+	top:5px;
+	left:5px;
 	transform:scale(.65,.65);
 }
 #bolt3{
@@ -279,8 +203,8 @@ body{
 	width:40px;
 	height:190px;
 	position:absolute;
-	top:70;
-	right:20;
+	top:70px;
+	right:20px;
 	transform:rotate(40deg);
 	z-index:1;
 }
@@ -290,8 +214,8 @@ body{
 	border-radius:50%;
 	background-color:#F2F2F2;
 	position:absolute;
-	top:0;
-	right:0;
+	top:0px;
+	right:0px;
 }
 #circ2{
 	top:150px;
@@ -301,16 +225,16 @@ body{
 	height:150px;
 	background-color:#F2F2F2;
 	position:absolute;
-	top:18;
-	right:0;
+	top:18px;
+	right:0px;
 }
 
 #lampleg-upper{
 	width:30px;
 	height:190px;
 	position:absolute;
-	top:-20;
-	right:40;
+	top:-20px;
+	right:40px;
 	transform:rotate(-60deg);
 	z-index:0;
 }
@@ -320,8 +244,8 @@ body{
 	border-radius:50%;
 	background-color:#DDDDDC;
 	position:absolute;
-	top:0;
-	right:0;
+	top:0px;
+	right:0px;
 }
 #circ4{
 	top:150px;
@@ -331,8 +255,8 @@ body{
 	height:150px;
 	background-color:#DDDDDC;
 	position:absolute;
-	top:18;
-	right:0;
+	top:18px;
+	right:0px;
 }
 
 #lampbase{
@@ -341,7 +265,7 @@ body{
 	background:#CCCCCB;
 	border-radius:50%;
 	position:absolute;
-	bottom:-10;
+	bottom:-10px;
 	right:50px;
 }
 #lampbase-cover{
@@ -349,7 +273,7 @@ body{
 	height:50px;
 	background:white;
 	position:absolute;
-	bottom:0;
+	bottom:0px;
 	right:0px;
 }
 #shade{
@@ -371,7 +295,7 @@ body{
 	height:75px;
 	background:#666667;
 	position:absolute;
-	top:37;
+	top:37px;
 }
 #shade-cover{
 	width:80px;
@@ -384,8 +308,8 @@ body{
 #light{
 	z-index:0;
 	position:absolute;
-	top:37;
-	left:-43;
+	top:37px;
+	left:-43px;
 	border-bottom: 225px solid rgba(249,237,36,.5);
 	border-left: 82px solid transparent;
 	border-right: 82px solid transparent;
@@ -394,7 +318,7 @@ body{
 	display: block;
 		-webkit-transition: opacity .1s ease-out;
 	    opacity: 0; 
-	    height: 0;
+	    height: 0px;
 	    overflow: hidden;
 	
 }
@@ -426,7 +350,7 @@ body{
 	border-radius:2px;
 	position:absolute;
 	z-index:10;
-	left:25;
+	left:25px;
     display:block;
       transition: transform 0.4s ease, background-color 1s ease;
 }
@@ -439,16 +363,16 @@ body{
 	height:30px;
 	background:#E5E5E5;
 	position:absolute;
-	bottom:10;
-	left:20;
+	bottom:10px;
+	left:20px;
 }
 #stand2{
 	width:20px;
 	height:30px;
 	background:#CCCCCB;
 	position:absolute;
-	bottom:15;
-	left:40;
+	bottom:15px;
+	left:40px;
 	z-index:1;
 }
 #phone-stand-shadow{
@@ -456,6 +380,6 @@ body{
 	height:10px;
 	background:#CCCCCB;
 	position:absolute;
-	bottom:0;
-	left:20;
+	bottom:0px;
+	left:20px;
 }
