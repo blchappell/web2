@@ -3,38 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Logoish</title>
-  <script src='logoish.js'></script>
+  <script src='../logoish.js'></script>
 </head>
 <body>
 
+<script>
+Logoish.init();
 
-	<script>
-	Logoish.init();
-	
-	hide();
+speed(0);
 
-	speed(0);
+lineWidth(1)
+hide();
 
-	lineWidth(2);
-	
-	lineColor("#2a5773");
+function segment(size) {
+  lineColor("#a6eecb");
+  rotate(40);
+  forward(size);
+  rotate(50);
+  lineColor("#5dab86");
+  forward(size);
+  rotate(60);
+  lineColor("#64c898");
+  forward(size);
+  rotate(180);
+}
 
-	function segment(size) {
-	  rotate(10);
-	  forward(size);
-	  rotate(-30);
-	  forward(size);
-	  rotate(-30);
-	  forward(size);
-	  rotate(10);
-	}
+for(var x = 0;x < 650; x++){ 
+  segment(x/8);  
+}
 
-	for(var x = 0;x < 1700; x++){ 
-	  segment(x/10);  
-	}
-	
-
-	</script>
+</script>
 	
 </body>
 </html>

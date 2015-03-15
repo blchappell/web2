@@ -6,35 +6,33 @@
   <script src='../logoish.js'></script>
 </head>
 <body>
-
-
-	<script>
+<script>
 	Logoish.init();
-	
-	hide();
 
 	speed(0);
 
-	lineWidth(2);
-	
-	lineColor("#2a5773");
+	lineWidth(1);
+	hide();
 
 	function segment(size) {
-	  rotate(10);
+	  lineColor("#f5f6a9");
+	  rotate(50);
 	  forward(size);
-	  rotate(-30);
+	  rotate(60);
+	  lineColor("#bbbc59");
 	  forward(size);
-	  rotate(-30);
+	  rotate(100);
+	  lineColor("#ffffff");
 	  forward(size);
-	  rotate(10);
+	  rotate(180);
+	   forward(size);
+	  rotate(220);
 	}
 
-	for(var x = 0;x < 1700; x++){ 
-	  segment(x/10);  
+	for(var x = 0;x < 1000; x++){ 
+	  segment(x/5);  
 	}
-	
 
-	</script>
-	
+</script>	
 </body>
 </html>
