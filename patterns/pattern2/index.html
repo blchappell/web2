@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logoish</title>
+  <script src='../logoish.js'></script>
+</head>
+<body>
+	
+<script>
+	Logoish.init();
+
+	speed(0);
+	
+	hide();
+
+	function segment(size) {
+	  lineColor('#666666');
+	  lineWidth(2);
+	  rotate(20);
+	  forward(size);
+	  lineColor('#d4d4d4');
+	  lineWidth(4);
+	  rotate(-90);
+	  forward(size/5);
+	  lineColor('#153451');
+	  lineWidth(2);
+	  rotate(-90);
+	  forward(size);
+  
+  
+	}
+
+	for(var x = 0;x < 300; x++){ 
+	  segment(x);  
+	}
+
+</script>
+	
+</body>
+</html>
