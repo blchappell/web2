@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> MassDraw</title>
+  <script src='http://cykod.github.io/Logoish/logoish.js'></script>
+  <script src='https://code.jquery.com/jquery-1.11.2.js'></script>
+   <link href='style.css' rel='stylesheet' type='text/css' />
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+  <script>
+    Logoish.init();
+  </script>
+  <div class='buttons'>
+    <button id='button-save'><span class="fa fa-floppy-o"></span></button>
+    <button id='button-replay'><span class="fa fa-refresh"></span></button>
+	<!--Tools-->
+    <button id='button-pen' class='tool selected'><span class="fa fa-pencil"></span></button>
+		<span id="pen-weight">1</span>
+	<button id='button-brush1' class='tool'><span class="fa fa-paint-brush"></span></button>
+		<span id="brush1-weight">20</span>
+	<button id='button-brush2' class='tool'><span class="fa fa-paint-brush"></span></button>
+		<span id="brush2-weight">50</span>
+	<button id='button-eraser' class='tool'><span class="fa fa-eraser"></span></button>
+	<button id='button-star' class='tool'><span class="fa fa-star"></span></button>
+	<button id='button-pent' class='tool'><span class="fa fa-cube"></span></button>
+	<!--Colors-->
+	<button id='button-black' class='tool'><span class="fa fa-eyedropper"></span></button>
+	<button id='button-sand' class='tool'><span class="fa fa-eyedropper"></span></button>
+	<button id='button-sanddark' class='tool'><span class="fa fa-eyedropper"></span></button>
+	<button id='button-water' class='tool'><span class="fa fa-eyedropper"></span></button>
+	<button id='button-waterdark' class='tool'><span class="fa fa-eyedropper"></span></button>
+	<button id='button-sky' class='tool'><span class="fa fa-eyedropper"></span></button>
+	<button id='button-whale' class='tool'><span class="fa fa-eyedropper"></span></button>
+	<button id='button-green' class='tool'><span class="fa fa-eyedropper"></span></button>
+  </div>
+  <script src='draw.js'></script>
+</body>
+</html>

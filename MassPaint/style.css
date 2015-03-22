@@ -1,0 +1,87 @@
+body, html { padding:0px; margin:0px; }
+
+.buttons {
+	position:absolute;
+	z-index:2;
+}
+
+.buttons button {
+  font-size: 24px;
+  padding:5px;
+  border:1px solid #999;
+  background-color:white;
+}
+
+.buttons button.selected {
+  background-color:gray;
+}
+
+/*colors*/
+#button-black{
+	background-color:#292929;
+}
+#button-black.selected{
+	background-color:black;
+}
+#button-sanddark{
+	background-color:#bcb2b3;
+}
+#button-sanddark.selected{
+	background-color:#aca2a3;
+}
+#button-sand{
+	background-color:#e8dfda;
+}
+#button-sand.selected{
+	background-color:#dad3cf;
+}
+#button-water{
+	background-color:#62bccc;
+}
+#button-water.selected{
+	background-color:#56a8b6;
+}
+#button-waterdark{
+	background-color:#187789;
+}
+#button-waterdark.selected{
+	background-color:#166675;
+}
+#button-sky{
+	background-color:#cad1e4;
+}
+#button-sky.selected{
+	background-color:#bbc3d8;
+}
+#button-whale{
+	background-color:#7483aa;
+}
+#button-whale.selected{
+	background-color:#69779d;
+}
+#button-green{
+	background-color:#7e9f33;
+}
+#button-green.selected{
+	background-color:#728f2d;
+}
+
+/*tools*/
+#pen-weight {
+	position:absolute;
+	top:24px;
+	left:93px;
+	font-size:12px;
+}
+#brush1-weight{
+	position:absolute;
+	top:24px;
+	left:130px;
+	font-size:12px;
+}
+#brush2-weight{
+	position:absolute;
+	top:24px;
+	left:171px;
+	font-size:12px;
+}
