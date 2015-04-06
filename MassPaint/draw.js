@@ -57,61 +57,14 @@ $("#button-brush2").on("click",function() {
 	width = lineWidth(50);
 })
 
-$("#button-black").on("click",function() {
-	$(this).addClass("selected");
-	tool = "black";
-	lineColor("black");
-	lineWidth(width);
+
+
+$(".color").on("click",function(e) {
+	var col = $(this).data("color");
+	color = col;
+	tool = "color";
 })
 
-$("#button-sand").on("click",function() {
-	$(this).addClass("selected");
-	tool = "sand";
-	lineColor("#e8dfda");
-	lineWidth(width);
-})
-
-$("#button-sanddark").on("click",function() {
-	$(this).addClass("selected");
-	tool = "sanddark";
-	lineColor("#bcb2b3");
-	lineWidth(width);
-})
-
-$("#button-water").on("click",function() {
-	$(this).addClass("selected");
-	tool = "water";
-	lineColor("#62bccc");
-	lineWidth(width);
-})
-
-$("#button-waterdark").on("click",function() {
-	$(this).addClass("selected");
-	tool = "waterdark";
-	lineColor("#187789");
-	lineWidth(width);
-})
-
-$("#button-sky").on("click",function() {
-	$(this).addClass("selected");
-	tool = "sky";
-	lineColor("#cad1e4");
-	lineWidth(width);
-})
-
-$("#button-whale").on("click",function() {
-	$(this).addClass("selected");
-	tool = "whale";
-	lineColor("#7483aa");
-	lineWidth(width);
-})
-
-$("#button-green").on("click",function() {
-	$(this).addClass("selected");
-	tool = "green";
-	lineColor("#7e9f33");
-	lineWidth(width);
-})
 
 function pent() {
 	for(var i = 0; i< 20; i++) {	
@@ -149,11 +102,12 @@ var drawing = false;
 var tool = "pen";
 var size = 25;
 var width = 1;
+var color = "black";
 
-$(document).on("mousedown",function(e) {
+$("canvas").on("mousedown",function(e) {
 	e.preventDefault();						 //whatever the browser was going to do before this, don't do it
   moveTo(e.pageX,e.pageY);
-  if(tool == "pen" || tool == "eraser" || tool == "brush1" ||  tool == "brush2" || tool == "black" || tool == "sand" || tool == "sanddark" || tool == "water" || tool == "waterdark" || tool == "green" || tool == "sky" || tool == "whale") { 
+  if(tool == "pen" || tool == "eraser" || tool == "brush1" ||  tool == "brush2" || tool == "color") { 
     drawing = true;
   } else if (tool == "star") {
 	  star();
@@ -162,14 +116,14 @@ $(document).on("mousedown",function(e) {
   }
 });
 
-$(document).on("mousemove",function(e) {
+$("canvas").on("mousemove",function(e) {
   e.preventDefault();
   if(drawing) {
     lineTo(e.pageX,e.pageY);
   }
 });
 
-$(document).on("mouseup",function(e) {
+$("canvas").on("mouseup",function(e) {
   e.preventDefault();
   drawing = false;
 });

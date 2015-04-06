@@ -1,0 +1,20 @@
+.container{
+  max-width:700px;
+  background-color:pink;
+}
+
+h2{
+  font-family:sans-serif;
+  color:pink;
+}
+
+h5{
+  font-family:sans-serif;
+  color:gray;
+}
+.item{
+  float:left;
+  margin-left:30px;
+  padding-bottom:15px;
+  border-bottom:1px solid black;
+}

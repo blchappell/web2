@@ -17,9 +17,11 @@ body, html { padding:0px; margin:0px; }
 }
 
 /*colors*/
+
 #button-black{
 	background-color:#292929;
-}
+	}
+
 #button-black.selected{
 	background-color:black;
 }
