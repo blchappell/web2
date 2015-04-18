@@ -33,17 +33,30 @@ $(".menu a").on("click",function(e) {
 });
 
 
-// TEXT FADE IN
-$("h1,h2,h4").on("arrived",function(e) {
+// CONTENT FADE IN
+$(".chapter").on("arrived",function(e) {
   $(this).addClass("on-page");
+});
+
+$(".title").on("arrived",function(e) {
+    $(this).addClass("appeared");
+});
+
+$(".title, .chapter").on("update",function(e,pos) {
+    var diff = pos * 200 - 100;
+    $(this).css({ transform: "translate(-50%,-" + diff + "px)" });
 });
 
 $("h3").on("arriving",function(e) {
   $(this).addClass("on-page");
 });
 
-$(".iframe-cover, #bg-3").on("arriving",function(e) {
+$(".iframe-cover, #bg-3, .ch1-cover").on("arriving",function(e) {
 	$(this).addClass("appeared");
+});
+
+$(".ch1-cover").on("arrived",function(e) {
+	$(this).addClass("transition");
 });
 
 $(".arrow-scroll").on("departing",function(e){
