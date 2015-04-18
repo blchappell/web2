@@ -23,7 +23,7 @@ $(".page").on("arriving rearriving",function() {
   $(".menu").find("a[href='" + href + "']").addClass("selected");
 });
 // Optional support for smooth scroll
-$(".menu a").on("click",function(e) {
+$(".menu a, #article-title").on("click",function(e) {
   // prevent the browser from jumping
   e.preventDefault();
   // Get the position of the page 
@@ -47,7 +47,7 @@ $(".title, .chapter").on("update",function(e,pos) {
     $(this).css({ transform: "translate(-50%,-" + diff + "px)" });
 });
 
-$("h3").on("arriving",function(e) {
+$("h3, .about").on("arriving",function(e) {
   $(this).addClass("on-page");
 });
 

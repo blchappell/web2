@@ -176,11 +176,18 @@ img.hamburger{
 	background-color:rgba(240,240,240,1);
 	width:100%;
 	box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.1);
+	position:relative;
 }
-#article-title p{
-	text-align:center;
+#article-title a{
+	font-family: 'Playfair Display', serif; 
+	text-decoration:none;
+	color:rgba(0,0,0,1);
 	font-size:12px;
-	padding-top:2px;
+	letter-spacing:.01rem;
+	padding-top:3px;
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
 }
 
 
@@ -259,7 +266,16 @@ background-size:100%;
 	color:rgba(0,0,0,1);
 	opacity:0%;
 	transition:opacity 3s ease 1s;
-	
+}
+.t2.about{
+	color:rgba(255,255,255,1);
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    letter-spacing: .02rem;
+	opacity:0%;
+	transition:opacity 3s ease 1s;
 }
 
 #bg-2 {
