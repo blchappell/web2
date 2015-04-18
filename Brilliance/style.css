@@ -142,8 +142,10 @@ h5{
   float:left;
   padding-left:25px;
   padding-right:25px;
-  padding-top:7px;
-
+  padding-top:8px;
+}
+.menu ul{
+	padding-top:0px;
 }
 
 .menu li a {
@@ -383,5 +385,60 @@ p.space-after{
 	display:block;
 	-webkit-animation:flicker 1s 2s infinite;
 }
+#site-footer{
+	position:relative;
+	bottom:0;
+	width:100vw;
+	height:55vh;
+	background-color:black;
+	
+}
+.upper-foot{
+	width:80vw;
+}
+img.footer{
+	z-index:10;
+}
 
+img.footer-wb, img.footer-social{
+	position:absolute;
+}
+img.footer-wb{
+	left:85px;
+	top:-20px;
+}
+img.footer-social{
+	right:95px;
+	top:-20px;
+}
+.copywrite{
+	z-index:20;
+	height:50px;
+	position:absolute;
+	border-top:solid 2px white;
+	width:80%;
+	left:50%;
+	transform:translateX(-50%);
+	bottom:0px;
+	color:white;
+	background-color:black;
+}
+.copywrite p,ul{
+	font-family:'Roboto',sans-serif;
+	font-size:12px;
+	padding-top:12px;
+}
+.copywrite p{
+	position:absolute;
+	left:0;
+}
+.copywrite ul{
+	position:absolute;
+	right:0;
+	list-style:none;	
+}
+.copywrite li{
+	float:left;
+	padding:0 10px 0 10px;	
+}
 
