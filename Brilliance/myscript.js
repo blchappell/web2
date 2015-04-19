@@ -63,6 +63,41 @@ $(".arrow-scroll").on("departing",function(e){
 	$(this).addClass("leave-page");
 });
 
+//AFFIX IMAGES
+/*
+$("#chapterThree, #chapterFour").scrollFlight();
+
+$("#chapterThree").on("departing",function(e) {
+  if(e.currentTarget == $("#chapterThree")[0]) { 
+     $("#chapterThree img").affix();
+  }
+});
+
+$("#chapterFour").on("departing",function(e) {
+  if(e.currentTarget == $("#chapterFour")[0]) { 
+     $("#chapterFour img").affix();
+  }
+});
+*/
+
+// SCALE STATS
+
+$("#widget2").on("update",function(e,pos) {
+    if($(this).flightState() == "arrived") {
+      var scale = pos * 5;
+      console.log(scale);
+      $(this).css({ transform: "scale(" + scale + ")" });
+    }
+})
+$("#widget2").on("arrived",function() {
+    $(this).addClass("arrived");
+});
+$("#widget2").on("departing",function() {
+    $(this).css({ transform: "scale(1)" });
+    $(this).affix();
+});
+
+
 // I WILL FIGURE THIS OUT
 /* jQuery(function($) {
   function fixImg() {
@@ -77,4 +112,62 @@ $(".arrow-scroll").on("departing",function(e){
   $(window).scroll(fixImg);
   fixDiv();
 });
-*/
+
+
+//HOME SCREEN SCROLL FIX NAV
+$(document).ready(function() {
+
+	var scroll, wresize, mobile;
+	var headerPos = $('.header-content').offset().top;
+	var once = true;
+	var init = false;
+	var show, go;
+	
+	(scroll = function() {
+		
+		if(mobile != true && $('.header-content').css('position') != 'fixed') {
+			var scrollPos = $(document).scrollTop();
+			
+			if(scrollPos > headerPos) {
+				clearTimeout(show);
+				init = true;
+				if(once === true) {
+					once = false;
+					$('.header .cover').hide();
+					go = setTimeout(function() {
+						$('.header .cover').show();
+					}, 400);
+				}
+				
+				$('.header-content').addClass('attached').css({'top' : (scrollPos-headerPos)+'px'});
+				
+			} else if(init === true) {
+				
+				clearTimeout(go);
+				
+				$('.header-content').removeClass('attached').css({'top' : '0px'});
+				once = true;
+				$('.header .cover').hide();
+				show = setTimeout(function() {
+					$('.header .cover').show();
+				}, 400);
+				
+				init = false;
+			}
+		}
+		
+	})();
+	
+	window.addEventListener('touchstart', function() {
+		mobile = true;
+	});
+	
+	(wresize = function() {
+		msize = $('.header').width();
+		$('.attached').width(msize);
+	});
+	
+	$(document).scroll(scroll);
+	$(window).resize(wresize);
+	
+});*/
