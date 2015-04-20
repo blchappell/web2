@@ -47,7 +47,7 @@ $(".title, .chapter").on("update",function(e,pos) {
     $(this).css({ transform: "translate(-50%,-" + diff + "px)" });
 });
 
-$("h3, .about").on("arriving",function(e) {
+$("h3, h4, .about").on("arriving",function(e) {
   $(this).addClass("on-page");
 });
 
@@ -60,28 +60,13 @@ $(".ch1-cover").on("arrived",function(e) {
 });
 
 $(".arrow-scroll").on("departing",function(e){
+    $(this).removeClass("on-page");
 	$(this).addClass("leave-page");
 });
 
-//AFFIX IMAGES
-/*
-$("#chapterThree, #chapterFour").scrollFlight();
-
-$("#chapterThree").on("departing",function(e) {
-  if(e.currentTarget == $("#chapterThree")[0]) { 
-     $("#chapterThree img").affix();
-  }
-});
-
-$("#chapterFour").on("departing",function(e) {
-  if(e.currentTarget == $("#chapterFour")[0]) { 
-     $("#chapterFour img").affix();
-  }
-});
-*/
 
 // SCALE STATS
-
+/*
 $("#widget2").on("update",function(e,pos) {
     if($(this).flightState() == "arrived") {
       var scale = pos * 5;
@@ -98,76 +83,4 @@ $("#widget2").on("departing",function() {
 });
 
 
-// I WILL FIGURE THIS OUT
-/* jQuery(function($) {
-  function fixImg() {
-    var $fixed = $('.fake-bg');
-    if ($(window).scrollTop() > 1900) {
-    	$fixed.addClass("get-fixed");
-    });
-    else {
-     $fixed.addClass("not-fixed");
-      });
-  }
-  $(window).scroll(fixImg);
-  fixDiv();
-});
-
-
-//HOME SCREEN SCROLL FIX NAV
-$(document).ready(function() {
-
-	var scroll, wresize, mobile;
-	var headerPos = $('.header-content').offset().top;
-	var once = true;
-	var init = false;
-	var show, go;
-	
-	(scroll = function() {
-		
-		if(mobile != true && $('.header-content').css('position') != 'fixed') {
-			var scrollPos = $(document).scrollTop();
-			
-			if(scrollPos > headerPos) {
-				clearTimeout(show);
-				init = true;
-				if(once === true) {
-					once = false;
-					$('.header .cover').hide();
-					go = setTimeout(function() {
-						$('.header .cover').show();
-					}, 400);
-				}
-				
-				$('.header-content').addClass('attached').css({'top' : (scrollPos-headerPos)+'px'});
-				
-			} else if(init === true) {
-				
-				clearTimeout(go);
-				
-				$('.header-content').removeClass('attached').css({'top' : '0px'});
-				once = true;
-				$('.header .cover').hide();
-				show = setTimeout(function() {
-					$('.header .cover').show();
-				}, 400);
-				
-				init = false;
-			}
-		}
-		
-	})();
-	
-	window.addEventListener('touchstart', function() {
-		mobile = true;
-	});
-	
-	(wresize = function() {
-		msize = $('.header').width();
-		$('.attached').width(msize);
-	});
-	
-	$(document).scroll(scroll);
-	$(window).resize(wresize);
-	
-});*/
+*/
