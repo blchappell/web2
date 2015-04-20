@@ -436,7 +436,7 @@ p.space-after{
 }
 .img2-container{
 	position:relative;
-	height:100vh;
+	height:115vh;
 	width:100vw;
 }
 .img2-container img{
@@ -468,12 +468,38 @@ ul.stats  li{
 	width:22%;
 }
 span.num{
-	font-family:'Roboto', sans-serif;
-	font-weight: 400;
-	font-style:normal;
-	font-size:4em;
-	color: black; -webkit-text-fill-color: rgba(102,170,218,.1); text-fill-color: rgba(102,170,218,.1); -webkit-text-stroke: 1.5px #688089; text-stroke: 1.5px #688089; background: white;
-	text-shadow: 2px 2px 0 rgba(86,255,255,.3);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4em;
+  color: black;
+  -webkit-text-fill-color: #688079;
+  text-fill-color: #688079;
+  -webkit-text-stroke: 1px #fff;
+  text-stroke: 1.5px #fff;
+  background: white;
+  text-shadow: 2px 2px 0 rgba(86,255,255,.5);
+}
+
+div.next-pg{
+	height: 200px;
+  	z-index: 999;
+  	width: 100%;
+  	position: absolute;
+	bottom:-1250%;
+ 	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+}
+.next-pg ul{
+  width: 1225px;
+  top: 25%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.next-pg ul li{
+	float:left;
+	list-style:none;
+	padding:0 80px 0 80px;
 }
 
 
@@ -482,7 +508,7 @@ span.num{
 	position:relative;
 	bottom:0;
 	width:100vw;
-	height:55vh;
+	height:45vh;
 	background-color:black;
 	
 }
