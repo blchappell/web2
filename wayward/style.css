@@ -583,7 +583,7 @@ img.footer-social{
 /*---------------*/
 
 #tile-container{
-  width: 1249px;
+  width: 1325px;
   position: absolute;
   top: 1590px;
   /*background-color: beige;*/
@@ -600,12 +600,110 @@ img.footer-social{
 	padding:10px;
 	position:relative;
 }
+
 img{
 	height:100%;
+	transition:opacity .5s ease;
 }
+img:hover{
+	opacity:.25;
+}
+span.overlay-4{
+	position: absolute;
+  top: 5px;
+  padding: 5px 0 5px 0;
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+  display: table;
+  /* height: 98%; */
+  left: 10px;
+  position: absolute;
+  width: 95.5%;
+  height: 64vh;
+}
+span.overlay-3{
+	position: absolute;
+	top: 5px;
+	padding: 5px 0 5px 0;
+	opacity: 1;
+	color: white;
+	cursor: pointer;
+	display: table;
+	/* height: 98%; */
+	left: 10px;
+	position: absolute;
+	width: 97%;
+	height: 445px;
+}
+span.t1-sm{
+  position: absolute;
+  top: 5px;
+  padding: 5px 0 5px 0;
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+  display: table;
+  /* height: 98%; */
+  left: 10px;
+  position: absolute;
+  width: 94.6%;
+  height: 270px;
+}
+span.t1-sm span, span.overlay-3 span, span.overlay-4 span{
+  font-size: 22px;
+  font-family: 'Playfair Display', serif;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  opacity:0;
+  transition:opacity .5s ease;
+  max-width:400px;
+}
+span.t1-sm span:hover {
+   background: rgba(0,0,0,0.75);
+   opacity:1;
+}
+
+span.overlay-3 span:hover {
+   background: rgba(0,0,0,0.75);
+   opacity:1;
+}
+
+span.overlay-4 span:hover {
+   background: rgba(0,0,0,0.75);
+   opacity:1;
+}
+
+span.text-content {
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 98%;
+  left: 10px;
+  position: absolute;
+  width: 97.8%;
+}
+ 
+span.text-content span {
+  font-size: 2.2em;
+  font-family: 'Playfair Display', serif;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  opacity:0;
+  transition:opacity .5s ease;
+  max-width:400px;
+}
+
+span.text-content span:hover {
+   background: rgba(0,0,0,0.75);
+   opacity:1;
+}
+
 .t-one{
   position: relative;
-  width: 68%;
+  width: 66.3%;
   height: 100vh;
   /*background-color: teal;*/
 }
@@ -655,6 +753,7 @@ img{
 	height:64.5vh;
 }
 .r4-two p{
+	width: 230px;
 	display:block;
 	position:absolute;
 	z-index:1;
@@ -683,8 +782,11 @@ img{
 	    border:1px solid black;
 	    color: #fff;
 }
+img.letters{
+	width:400px;
+}
 #stories{
-	background-color:pink;
+	background-color:white;
 	width:100vw;
-	height:100vh;
+	height:50vh;
 }
