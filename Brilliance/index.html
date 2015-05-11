@@ -5,17 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css"> 
-	<!-- JS --><a href="index.html" id="" title="index">index</a>
+	<!-- JS -->
 	<script src='https://code.jquery.com/jquery-2.1.3.js'></script>
 	<script src='http://cykod.github.io/ScrollFlight/scroll_flight.js'></script>
 	
 	<title>W/B Feature 1</title>
-	<link rel="shortcut icon" href="img/fav.png">
+	<link rel="icon" 
+	      type="img/fav.png" 
+	      href="http://blchappell.github.io/web2/Brilliance/">
 	
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-
 </head>
 <body>
 	<div id="site-container">
@@ -35,16 +36,16 @@
 			</nav>
 		
 <!-- Article cover [with iframe bg] -->	
-	<div class='page' id="bg-1">
+	<div class='page scrolling' id="bg-1">
 	  <div class='iframe-cover'>
 		  <div class="title scrolling">
 	  		<div class="t1">Brilliance</div>
 			<div class="t2">by D-Rev</div>
 		  </div>
-			<img src="img/arrow.png" alt="scroll" class="arrow-scroll departing"/>
+			<img src="img/arrow.png" alt="scroll" class="arrow-scroll departing scrolling"/>
 	  </div><!-- end 'iframe-cover' -->
 	  <div class='iframe-wrapper'>
-	    <iframe src='https://www.youtube.com/embed/MqIa4FhCJLY?autoplay=1&loop=1&controls=0&playsinline=1&playlist=MqIa4FhCJLY' frameborder="0"></iframe>
+	    <iframe src='https://www.youtube.com/embed/MqIa4FhCJLY?autoplay=1&amp;loop=1&amp;controls=0&playsinline=1&playlist=MqIa4FhCJLY'></iframe>
 	  </div><!-- end 'iframe-wrapper' -->
 	</div>
 	
@@ -52,19 +53,18 @@
 	</div>
 	
 	<div class='page' id="bg-2a">
-		<h3 class="scrolling" id="half-title">Combatting Jaundice in </br>
+		<h3 class="scrolling" id="half-title">Combatting Jaundice in <br>
 			the Developing World</h3>
 			<div class="t2 about scrolling">How D-Rev took a product failure as initiative to redesign a cure for Jaundice.</div>
 	</div>
 	
 <!--Chapter One: The Problem-->	
-<!--	<div class='page full-page' id="chapterOne">
+<!--	<div class='page full-page scrolling' id="chapterOne">
 		<h4 class="scrolling chapter">The Problem</h4>
 	</div> -->
 	
 	<div class='page full-page' id="chapterOne">
 		<h4 class="scrolling chapter">The Problem</h4>
-		<img src="img/rural-treatment.jpg" alt="brilliance baby" class="fake-bg"/>
 	</div>	
 	
 	
@@ -76,36 +76,26 @@
 			<div class="blk-rule"></div>
 		 </div>
 		 		<p>Though the illness isn’t specific to developing countries, contextual factors such as rates of premature birth, insufficient prenatal care, and limited hospital resources mean that children born into poverty suffer disproportionately from the severe consequences of delayed or inadequate treatment. The fluorescent bulbs in the standard phototherapy devices that are used to treat jaundice burn out, and hospitals often can’t afford to replace them. Or sometimes they’re replaced with bulbs that don’t provide the required spectrum, or intensity, of light. In these and many other cases, the problem is eminently solvable. For design organization D-Rev, the solution was clear: develop a phototherapy device with LEDs instead of CFLs (that are more efficient and do not require costly replacement), and make the device affordable for medical providers across the globe. Two years in the making, Brilliance is precisely that device.</p>
-		</div> <!--End 'ch1-content'-->
-	</div> <!--End 'page text'-->
-	
-	<div class="parallax">	
-		<div class='parallax-img'></div>
-	</div>
-	
-	
-		<div class='ch1-cover'>
 			<div class="img-container">
-				<div class='page text'>
-					<div id='ch2-content'>
-					<div class="scrolling pull-quote">
-						<p>"1 in 3 current treatment devices have at least one bulb burnt out or missing."</p>
-						<div class="blk-rule"></div>
-					 </div>
-							<p class="space-after">In studies of medical facilities in India and Nigeria, D-Rev and Stanford found that 95% of devices evaluated in low-income hospitals and clinics did not meet American Academy of Pediatrics standards for intensive phototherapy.2,3 Maintenance was a key limitation in delivery of treatment: approximately 1 in 3 phototherapy devices had at least one bulb burned out or missing. Compact florescent bulbs, commonly used in phototherapy devices, cost approximately $15 per bulb to replace and last approximately four months. Many hospitals have trouble sourcing these bulbs and, with devices using an average of six bulbs each, they simply can’t afford to replace them as needed.</p>
-					</div> <!--End 'ch2-content'-->
-				</div> <!--End 'page text'-->
-			<img src="img/device-light-flick.svg" alt="devices" class="flick"/>
-			<img src="img/device-light.svg" alt="devices" class="light"/>
-			<img src="img/device.svg" alt="devices" class="device"/>
+				<img src="img/device-light-flick.svg" alt="devices" class="flick"/>
+				<img src="img/device-light.svg" alt="devices" class="light"/>
+				<img src="img/device.svg" alt="devices" class="device"/>
 			</div>
-		</div>
-		
+			<div id='text-below-img'>
+			<div class="scrolling pull-quote">			
+				<p>"1 in 3 current treatment devices have at least one bulb burnt out or missing."</p>
+				<div class="blk-rule"></div>
+			 </div>
+							<p class="space-after">In studies of medical facilities in India and Nigeria, D-Rev and Stanford found that 95% of devices evaluated in low-income hospitals and clinics did not meet American Academy of Pediatrics standards for intensive phototherapy.2,3 Maintenance was a key limitation in delivery of treatment: approximately 1 in 3 phototherapy devices had at least one bulb burned out or missing. Compact florescent bulbs, commonly used in phototherapy devices, cost approximately $15 per bulb to replace and last approximately four months. Many hospitals have trouble sourcing these bulbs and, with devices using an average of six bulbs each, they simply can’t afford to replace them as needed.</p>
+			 </div>
+							</div> <!--End 'ch1-content'-->
+						</div> <!--End 'page text'-->
+
+
 		
 <!--Chapter Two: The Outcome-->	
 	<div class='page full-page' id="chapterTwo">
 		<h4 class="scrolling chapter">The Outcome</h4>
-		<img src="img/brilliance_baby.jpg" alt="brilliance baby" class="fake-bg"/>
 	</div>	
 	
 	<div class='page text'>
@@ -122,7 +112,6 @@
 <!--Chapter Three: The Process-->		
 	<div class='page full-page' id="chapterThree">
 		<h4 class="scrolling chapter">The Process</h4>
-		<img src="img/order.jpg" alt="brilliance baby" class="fake-bg"/>
 	</div>	
 	
 	<div class='page text'>
@@ -148,15 +137,36 @@
 <!--Chapter Four: The Impact-->		
 	<div class='page full-page' id="chapterFour">
 		<h4 class="scrolling chapter">The Impact</h4>
-		<img src="img/Brilliance-Nurse.jpg" alt="brilliance baby" class="fake-bg"/>
 	</div>	
 	
 	<div class='page text'>
 		<div id='ch4-content'>
+			<div class="img2-container">
+				<img src="img/device-babe-flick.svg" alt="devices" class="babeflick"/>
+				<img src="img/device-babe.svg" alt="devices" class="babe"/>
+			</div>
+			
+			<ul class='stats'>
+				<li><span class='num'>51,926</span><br>babies treated with Brilliance</li>
+				<li><span class='num'>43,554</span><br>babies treated who would not otherwise have received effective treatment</li>
+				<li><span class='num'>676</span><br>newborn deaths and disabilities averted</li>
+				<li><span class='num'>884</span><br>Brilliance units installed</li>
+			</ul>
+			
 		</div> <!--End 'ch4-content'-->
 	</div> <!--End 'page text'-->
 	
+
+	
 		</div><!-- end 'site-container' -->
+	
+		<div class='next-pg'>
+			<ul>
+				<li><a href=''><img src='img/next-left.png' alt='Previous'></a></li>
+				<li><a href=''><img src='img/discuss.png' alt='Discuss'></a></li>
+				<li><a href=''><img src='img/next-right.png' alt='Next'></a></li>
+			</ul>
+		</div>
 	
 <!--Footer-->	
 	<div id='site-footer'>

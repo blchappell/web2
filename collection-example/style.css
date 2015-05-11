@@ -1,0 +1,108 @@
+body {
+  font-family:Arial;
+}
+
+.collection {
+  margin: 0 20px;
+}
+
+
+#filter-bar-wrapper {
+  height:50px;
+}
+
+#filter-bar {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  background-color:#EEE;
+  text-align:center;
+  height:40px;
+  padding-top:10px;
+  z-index:2;
+}
+
+.category {
+  background-color:white;
+  border:0px;
+  border-radius:5px;
+  padding:5px;
+}
+
+.category.selected {
+  background-color:black;
+  color:white;
+}
+
+#search  {
+  padding:5px;
+}
+
+.item {
+  width: 200px;
+  list-style-type:none;
+  background-color:brown;
+  padding:20px;
+  float:left;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+.red { 
+  background-color:red;
+}
+
+.blue { 
+  background-color: lightblue;
+}
+
+.purple {
+  background-color:purple;
+}
+
+.item-big { width: 300px; }
+
+
+.overlay {
+  position:fixed;
+  height:100%;
+  width:100%;
+  left:0;
+  top:0;
+  background-color:rgba(0,0,0,0.7);
+  z-index: 3;
+  display:none;
+}
+
+
+.modal {
+  width: 400px;
+  position: fixed;
+  top: 5%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background-color:white;
+  padding:10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  border-radius:10px;
+  z-index:4;
+  display:none;
+  max-height:90%;
+  overflow:auto;
+}
+
+.modal img { width:400px; height:400px; }
+
+/* MINE */
+
+.Apponaug {
+	background-color:purple;
+}
+.Goddard-Park{
+	background-color:teal;
+}
+.Buttonwoods{
+	background-color:green;
+}

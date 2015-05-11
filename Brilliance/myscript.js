@@ -47,7 +47,7 @@ $(".title, .chapter").on("update",function(e,pos) {
     $(this).css({ transform: "translate(-50%,-" + diff + "px)" });
 });
 
-$("h3, .about").on("arriving",function(e) {
+$("h3, h4, .about").on("arriving",function(e) {
   $(this).addClass("on-page");
 });
 
@@ -60,21 +60,27 @@ $(".ch1-cover").on("arrived",function(e) {
 });
 
 $(".arrow-scroll").on("departing",function(e){
+    $(this).removeClass("on-page");
 	$(this).addClass("leave-page");
 });
 
-// I WILL FIGURE THIS OUT
-/* jQuery(function($) {
-  function fixImg() {
-    var $fixed = $('.fake-bg');
-    if ($(window).scrollTop() > 1900) {
-    	$fixed.addClass("get-fixed");
-    });
-    else {
-     $fixed.addClass("not-fixed");
-      });
-  }
-  $(window).scroll(fixImg);
-  fixDiv();
+
+// SCALE STATS
+/*
+$("#widget2").on("update",function(e,pos) {
+    if($(this).flightState() == "arrived") {
+      var scale = pos * 5;
+      console.log(scale);
+      $(this).css({ transform: "scale(" + scale + ")" });
+    }
+})
+$("#widget2").on("arrived",function() {
+    $(this).addClass("arrived");
 });
+$("#widget2").on("departing",function() {
+    $(this).css({ transform: "scale(1)" });
+    $(this).affix();
+});
+
+
 */
