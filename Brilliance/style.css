@@ -454,8 +454,11 @@ p.space-after{
 .stats{
 	text-align:center;
 	position: absolute;
-	top: 530px;
-	width: 105%;
+  bottom: 130px;
+  min-width: 960px;
+  height: 150px;
+  left:50%;
+  transform:translateX(-50%);	
 }
 ul.stats  li{
 	font-family:'Playfair Display', serif;
@@ -465,7 +468,7 @@ ul.stats  li{
 	float:left;
 	list-style:none;
 	padding:0 20px 0 20px;
-	width:22%;
+	width:200px;
 }
 span.num{
   font-family: 'Roboto', sans-serif;
@@ -481,54 +484,31 @@ span.num{
   text-shadow: 2px 2px 0 rgba(86,255,255,.5);
 }
 
-div.next-pg{
-	height: 200px;
-  	z-index: 999;
-  	width: 100%;
-  	position: absolute;
-	bottom:-1440%;
- 	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
-}
-.next-pg ul{
-  width: 1225px;
-  top: 25%;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-}
-.next-pg ul li{
-	float:left;
-	list-style:none;
-	padding:0 80px 0 80px;
-}
 
 
-/* FOOTER */
+/* Footer */
 #site-footer{
-	position:relative;
-	bottom:0;
-	width:100vw;
-	height:45vh;
+	width:100%;
+	height:375px;
 	background-color:black;
-	
+	position:relative;
+	bottom:0px;	
 }
 .upper-foot{
-	width:80vw;
+	  height: 330px;
+	  width: 80%;
+	  position: absolute;
+	  left: 50%;
+	  top: 0;
+	  transform: translate(-50%,0);
 }
-img.footer{
-	z-index:10;
+.footer-wb{
+	position: absolute;
+	left:0px;
 }
-
-img.footer-wb, img.footer-social{
-	position:absolute;
-}
-img.footer-wb{
-	left:85px;
-	top:-20px;
-}
-img.footer-social{
-	right:95px;
-	top:-20px;
+.footer-social{
+	position: absolute;
+	right:0px;
 }
 .copywrite{
 	z-index:20;
