@@ -1,35 +1,4 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Anchors Example</title>
-  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
-  <script src='http://cykod.github.io/Collection.js/packery.pkgd.min.js'></script>
-  <script src='http://cykod.github.io/Collection.js/tabletop.js'></script>
-  <script src='http://cykod.github.io/Collection.js/collection.js'></script>
-  <link type='text/css' rel='stylesheet' href='style.css' />
-</head>
-<body>
 
-<div id='filter-bar-wrapper'>
-  <div id='filter-bar'>
-    <input type='text' id='search' placeholder='search'/>
-    <button data-category=""      class='category selected' id="all-button">All</button>
-    <button data-category="Apponaug"  class='category'>Apponaug</button>
-    <button data-category="Goddard-Park"   class='category'>Goddard Park</button>
-    <button data-category="Buttonwoods"   class='category'>Buttonwoods</button>
-  </div>
-</div>
-
-<ul class='collection'>
- 
-
-
-</ul>
-
-<div class='overlay'></div>
-<div class='modal'></div>
-<script>
 
 // ADD IN DETAIL VIEW
 
@@ -37,11 +6,13 @@ function showModal(item) {
    $(".modal").empty();
 	// anything with a class of 'modal', clear out anything inside of it
    
-   var $h1 = $("<h1>").text(item.Latitude + ", " + item.Longitude);
+   var $h1 = $("<h1>").text(item.Neighborhood);
+   var $h4 = $("<h4>").text(item.Latitude + ", " + item.Longitude);
    var $img = $("<img>").attr("src",item.Image);
-   var $p = $("<p class='description'>").text("Distance from hail port: " + item.Distance);
+   var $p = $("<p class='distance'>").text("Distance from hail port: " + item.Distance);
+   var $p2 = $("<p class='description'>").text(item.Description);
 
-   $(".modal").append($h1,$img,$p);
+   $(".modal").append($h1,$h4,$img,$p,$p2);
    
    $(".overlay").show();
    $(".modal").show();
@@ -69,8 +40,9 @@ console.log(item);
   $li.attr("data-category",item.Neighborhood);
 	// add an attribute to the HTML for 'data-category' and set the value to whatever that color is in the spreadsheet
 
-  var $h2 = $("<h2 class='name'>").text("lat "+ item.Latitude + ", " + "long "+  item.Longitude);
-  var $p = $("<p class='description'>").text("Distance from hail port: " + item.Distance);
+  var $h2 = $("<h2 class='name'>").text(item.Neighborhood);
+  var $p = $("<p class='description'>").text("lat "+ item.Latitude + ", " + "long "+  item.Longitude);
+  //var $p = $("<p class='description'>").text("Distance from hail port: " + item.Distance);
 	// add an 'h2' and a 'p' inside the 'li' and set the values to whatever was in the speadsheet under those columns
 
   $li.append($h2).append($p);
@@ -151,9 +123,3 @@ function callback(data) {
   Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1zSAgOFI9GU07DjkrOBVprBDlfRWtedhS_E9iTwH1fPs/pubhtml",
                    callback: callback,
                    simpleSheet: true } )
-
-
-</script>
-	
-</body>
-</html>

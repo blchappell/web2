@@ -1,14 +1,38 @@
 body {
   font-family:Arial;
+  background-color: #CEE1E0;
 }
 
 .collection {
   margin: 0 20px;
+  top:90px;
+}
+p{
+  font-size: .8em;
+}
+p.distance{
+  font-style: italic;
+}
+p.description{
+  max-width:390px;
+}
+h3{
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: .05rem;
+  color:rgba(255,255,255,.75);
+  font-style: italic;
+}
+#top{
+  background-color:#282828; 
+  width: 100%;
+  top:0px;
+  position:absolute;
+  height:50px;
 }
 
-
 #filter-bar-wrapper {
-  height:50px;
+  height:80px;
 }
 
 #filter-bar {
@@ -16,49 +40,51 @@ body {
   top:0px;
   left:0px;
   width:100%;
-  background-color:#EEE;
+  background-color:#444444;
   text-align:center;
-  height:40px;
+  height:160px;
   padding-top:10px;
   z-index:2;
 }
 
 .category {
-  background-color:white;
-  border:0px;
+  color:#DDDDDD;
+  background-color:#444444;
+  border:solid 1px #9B9B9B;
   border-radius:5px;
   padding:5px;
+  margin-bottom: 5px;
 }
 
 .category.selected {
-  background-color:black;
+  background-color:#B27F6D;
+  border:solid 1px white;
   color:white;
 }
 
 #search  {
-  padding:5px;
+  padding:5px 180px 5px 5px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  background-color: #444444;
+  border:0px;
+  border-bottom: solid 1px #9B9B9B;
+}
+#data-container{
+  width:960px;
+  position: relative;
+  left:50%;
+  transform:translateX(-50%);
 }
 
 .item {
   width: 200px;
   list-style-type:none;
-  background-color:brown;
+  background-color:white;
+  border:solid 1px #444444;
   padding:20px;
   float:left;
   cursor:pointer;
-  border-radius:5px;
-}
-
-.red { 
-  background-color:red;
-}
-
-.blue { 
-  background-color: lightblue;
-}
-
-.purple {
-  background-color:purple;
 }
 
 .item-big { width: 300px; }
@@ -86,16 +112,37 @@ body {
   background-color:white;
   padding:10px;
   box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-  border-radius:10px;
+  border:#9B9B9B;
   z-index:4;
   display:none;
   max-height:90%;
   overflow:auto;
 }
 
-.modal img { width:400px; height:400px; }
+.modal img { width:400px; height:275px; }
 
-/* MINE */
+ul.views{
+  position:absolute;
+  top:0px;
+  right:20px;
+}
+.views li{
+  list-style: none;
+  float:left;
+  padding:0px 5px;
+}
+.views a{
+  text-decoration: none;
+  color:white;
+  font-size: 12px;
+  color:#9B9B9B;
+}
+a.select{
+  color:#B27F6D;
+  border-bottom: solid 1px #9B9B9B;
+}
+
+/* MINE 
 
 .Apponaug {
 	background-color:purple;
@@ -105,4 +152,4 @@ body {
 }
 .Buttonwoods{
 	background-color:green;
-}
+}*/
